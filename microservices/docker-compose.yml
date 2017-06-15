@@ -2,6 +2,7 @@ version: "2"
 services:
   python-service:
     build: ./python
+    container_name: python-service
     volumes: 
       - ./python:/usr/src/app
     ports:
@@ -9,6 +10,7 @@ services:
     
   php-service:
     image: php:apache
+    container_name: php-service
     volumes:
       - ./php:/var/www/html
     ports:

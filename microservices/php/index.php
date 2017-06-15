@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-	Products are:
+Runing PHP - And the Products are:
 	<ul>
 		<?php
 		$json = file_get_contents("http://python-service");

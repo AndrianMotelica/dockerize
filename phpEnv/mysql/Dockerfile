@@ -1,0 +1,5 @@
+FROM mysql:5.5.56
+
+ENV MYSQL_ROOT_PASSWORD="root"
+ENV MYSQL_DATABASE="homestead"
+

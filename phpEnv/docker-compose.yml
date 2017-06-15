@@ -1,0 +1,33 @@
+version: "2"
+services:
+  php-56:
+    build: ./56
+    container_name: php-56
+    volumes: 
+      - ./application:/var/www/html
+    ports:
+      - "2222:22"
+      - "8282:80"      
+    
+  php-7:
+    build: ./7
+    container_name: php-7
+    volumes:
+      - ./application:/var/www/html
+    ports:
+      - "8383:80"
+
+  php-7lat:
+    build: ./7lat
+    container_name: php-7lat
+    volumes:
+      - ./application:/var/www/html
+    ports:
+      - "8484:80"
+
+  mysql-provider:
+    container_name: mysqlProvider
+    build: ./mysql    
+    ports:
+      - "33069:3306" 
+

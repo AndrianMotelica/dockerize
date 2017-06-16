@@ -9,6 +9,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 COPY ./runtime/run.sh /opt/run.sh
 COPY ./runtime/.env /var/sym/.env 
-RUN chmod +x /opt/run.sh
+RUN chmod +x /opt/run.sh 
 
 CMD ["/opt/run.sh"]
